@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.titleDiv {
+  width: 63%;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 1.5%;
+  position: absolute;
+  left: 20%;
+  z-index: 1;
+  color: white;
+  font-family: Anton;
+  font-weight: 200;
+ 
+}
+
+.titreH2Header {
+  text-align: center;
+  padding: 1%;
+  font-weight: 400;
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: Anton;
+  color: var(--yellow, #FFD15B);
+}
+
+.headerDiv h1 a {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.iconAccueil {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.divSearch {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('assets/imageAccueil.jpg');
+  background-size: cover;
+  /* Assurez-vous que l'image couvre toute la div */
+  background-position: center;
+  /* Centre l'image */
+  background-repeat: no-repeat;
+  /* Prévient la répétition de l'image */
+  position: relative;
+  /* Pour permettre la position absolue des enfants si nécessaire */
+  height: 750px;
+  color: white;
+  width: 75%;
+}
+
+.imageAccueil {
+
+
+
+  margin: auto;
+  object-fit: cover;
+
+}
+
+main {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+  width: 100%;
+}
+.form-search{
+  margin: 0 auto;
+  text-align: center;
+  font: bold 13px sans-serif;
+  max-width: 100%;
+  position: relative;
+  right: -30px;
+}
+
+.form-search input{
+  width: 67%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  background-color:  #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 19px 56px 19px 27px;
+  border: 1px solid #b6c3cd;;
+  border-right: 0;
+  border-radius: 10px;
+  color:#4E565C;
+  outline: none;
+
+}
+
+.form-search button{
+  background-color: black;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  /* padding: 15px 22px; */
+  width: 40px;
+  border-radius: 10px;
+  height: 40px;
+  margin-left: -4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: relative;
+  left: -50px;
+  top: 8px;
+  margin: auto;
+}
+
+.form-search i{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  color: #80A3BD;
+}
+
+
+
+.vignetteRecette {
+  width: 380px;
+  height: 731px;
+  border-radius: 21px;
+  background: #FFF;
+  box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.imageRecette {
+  width: 380px;
+  height: 253px;
+  border-radius: 21px 21px 0 0;
+  flex-shrink: 0;
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.titreRecette h3 {
+  color: #000;
+  font-family: Anton;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#recettesParent {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+}
+#recipesContainer {
+  display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 75%;
+    background-color: #EDEDED;
+}
+
+
+
+.sort-container {
+  margin-top: 2%;
+}
+
+#sortOrder_label {
+  padding: 10%;
+}
+
+
+.choices__list {
+  background-color: #901C1C;
+  color: white;
+}
+
+
+/* .choices__list--dropdown {
+  max-height: 200px; /* Spécifiez la hauteur maximale souhaitée pour la liste déroulante */
+/* overflow-y: auto; /* Active le défilement vertical si nécessaire */
+
+
+
+.choices__list--dropdown .choices__item {
+  background-color: yellow;
+  color: white;
+}
+
+.choices__list--dropdown .choices__item.is-highlighted {
+  background-color: yellow;
+  color: white;
+}
+
+.listAndTag {
+
+width: 100%;
+}
+
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+
+.listbox {
+  background-color: yellow;
+  color: white;
+  height: 141px;
+  width: 170px;
+  border-radius: 0px 0px 6px 6px;
+
+}
+
+
+
+.listIngredient, .listAppareil, .listUstensile {
+  width: 179px;
+  height: 59px;
+  display: inline-flex;
+  padding: 17px 16px;
+  align-items: center;
+  gap: 63px;
+  border-radius: 11px;
+  background: #FFF;
+  margin-bottom: 10px; /* Ajouté pour donner de l'espace entre chaque élément de la liste */
+}
+
+.listTriage {
+  display: flex;
+  align-items: center;
+}
+
+.nombreRecettes {
+  background-color: aliceblue;
+  width: 100px;
+  height: 20px;
+}

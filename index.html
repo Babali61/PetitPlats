@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Les petits plats</title>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="headerDiv">
+      <h1>
+        <a href="index.html">LES PETITS PLATS
+          <img src="assets/icon/iconePetitPlats.svg" class="iconAccueil" alt="Accueil icone" />
+        </a>
+      </h1>
+      <div class="divSearch">
+        <h2 class="titreH2Header">
+          CHERCHEZ PARMI PLUS DE 1500 RECETTES<br />
+          DU QUOTIDIEN, SIMPLES ET DéLICIEUSES
+        </h2>
+        <div class="search-container">
+          <form class="form-search" method="get" action="#">
+            <input type="search" name="search" placeholder="Rechercher une recette, un ingrédient, ..." />
+            <button type="submit">
+              <img src="assets/icon/IconeRecherche.svg" alt="Recherche" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="recipesContainer">
+      <div class="listAndTag">
+        <div class="list">
+          <div class="listes">
+            <!-- Section des ingrédients -->
+            <div class="listIngredient">
+              <div class="listTriage">
+                <label id="ingredient_label" for="ingredient_button">Trier par</label>
+                <div
+                  id="ingredient_button"
+                  class="listboxButton option"
+                  role="button"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <div class="optionText">
+                    <!-- Cette span sera remplie dynamiquement -->
+                    <span id="ingredient_value" class="selected"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Section des appareils -->
+            <div class="listAppareil">
+              <label id="appareil_label" for="appareil_button">Trier par</label>
+              <div
+                id="appareil_button"
+                class="listboxButton option"
+                role="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                tabindex="0"
+              >
+                <div class="optionText">
+                  <!-- Cette span sera remplie dynamiquement -->
+                  <span id="appareil_value" class="selected"></span>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Section des ustensiles -->
+            <div class="listUstensile">
+              <label id="ustensile_label" for="ustensile_button">Trier par</label>
+              <div
+                id="ustensile_button"
+                class="listboxButton option"
+                role="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                tabindex="0"
+              >
+                <div class="optionText">
+                  <!-- Cette span sera remplie dynamiquement -->
+                  <span id="ustensile_value" class="selected"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Section du nombre de recettes -->
+          <div class="nombreRecettes" style="background-color: aliceblue; width: 100px; height: 20px;"></div>
+        </div>
+        
+      <div class="tag"></div>
+      <div id="recettesParent">
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
