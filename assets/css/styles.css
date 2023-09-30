@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+.titleDiv {
+  width: 63%;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 1.5%;
+  position: absolute;
+  left: 15%;
+  z-index: 1;
+  color: white;
+  font-family: Anton;
+  font-weight: 200;
+ 
+}
+h4 {
+  color: var(--Grey, #7A7A7A);
+  margin-left: 25px;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+text-transform: uppercase;
+}
+.titreH2Header {
+  text-align: center;
+  padding: 1%;
+  font-weight: 400;
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: Anton;
+  color: var(--yellow, #FFD15B);
+}
+
+.headerDiv h1 a {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.iconAccueil {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.divSearch {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('../images/imageAccueil.jpg');
+  background-size: cover;
+  /* Assurez-vous que l'image couvre toute la div */
+  background-position: center;
+  /* Centre l'image */
+  background-repeat: no-repeat;
+  /* Prévient la répétition de l'image */
+  position: relative;
+  /* Pour permettre la position absolue des enfants si nécessaire */
+  height: 750px;
+  color: white;
+  width: 75%;
+}
+
+.input-search {
+  color: var(--Grey, #7A7A7A);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.imageAccueil {
+  margin: auto;
+  object-fit: cover;
+
+}
+
+main {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+  width: 100%;
+}
+.form-search{
+  margin: 0 auto;
+  text-align: center;
+  font: bold 13px sans-serif;
+  max-width: 100%;
+  position: relative;
+  right: -30px;
+}
+
+.form-search input{
+  width: 67%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  background-color:  #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 28px 76px 28px 28px;
+  border: 1px solid #b6c3cd;;
+  border-right: 0;
+  border-radius: 10px;
+  color:#4E565C;
+  outline: none;
+  font-size: medium;
+
+}
+
+.form-search button{
+  background-color: black;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  /* padding: 15px 22px; */
+  width: 50px;
+  border-radius: 10px;
+  height: 50px;
+  margin-left: -4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: relative;
+  left: -65px;
+  top: 7px;
+  margin: auto;
+}
+
+.form-search i{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  color: #80A3BD;
+}
+
+
+
+.vignetteRecette {
+  width: 380px;
+  height: 731px;
+  border-radius: 21px;
+  background: #FFF;
+  box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.imageRecette {
+  width: 380px;
+  height: 253px;
+  border-radius: 21px 21px 0 0;
+  flex-shrink: 0;
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.titreRecette h3 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 25px;
+  color: #000;
+  font-family: Anton;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#recettesParent {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+}
+#recipesContainer {
+  display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 75%;
+    background-color: #EDEDED;
+}
+
+
+
+.sort-container {
+  margin-top: 2%;
+}
+
+#sortOrder_label {
+  padding: 10%;
+}
+
+
+.choices__list {
+  background-color: #901C1C;
+  color: white;
+}
+
+
+/* .choices__list--dropdown {
+  max-height: 200px; /* Spécifiez la hauteur maximale souhaitée pour la liste déroulante */
+/* overflow-y: auto; /* Active le défilement vertical si nécessaire */
+
+
+
+.choices__list--dropdown .choices__item {
+  background-color: yellow;
+  color: white;
+}
+
+.choices__list--dropdown .choices__item.is-highlighted {
+  background-color: yellow;
+  color: white;
+}
+
+.listAndTag {
+
+width: 100%;
+}
+
+
+.list {
+  display: flex;
+    align-items: center;
+    margin-top: 1.5%;
+    margin-left: 6.3%;
+}
+
+.listbox {
+  background-color: yellow;
+  color: white;
+  height: 141px;
+  width: 170px;
+  border-radius: 0px 0px 6px 6px;
+
+}
+
+.listes {
+  width: 65%;
+  display: flex;
+
+}
+
+.listIngredient, .listAppareil, .listUstensile {
+  width: 160px;
+  height: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 15px 16px;
+  align-items: center;
+  gap: 21px;
+  border-radius: 11px;
+  background: #FFF;
+  margin-right: 5%;
+  margin-bottom: 10px; 
+  
+color: var(--Black, #1B1B1B);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;/* Ajouté pour donner de l'espace entre chaque élément de la liste */
+}
+
+.listTriage {
+  display: flex;
+  align-items: center;
+}
+
+.nombreRecettes{
+  color: var(--Black, #1B1B1B);
+font-family: Anton;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.descriptionRecette {
+  width: 300px;
+  max-height: 100px; /* Ajustez cette valeur selon vos besoins */
+  overflow-y: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.force-overflow {
+  min-height: 80px;
+}
+.scrollbar {
+  height: 42px;
+  margin-left: 25px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  color: var(--Black, #1B1B1B);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #afafaf;
+}
+
+.ingredient-parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.ingredient-enfant{
+  width: 165px;
+  padding-bottom: 7%;
+  padding-right: 12px;
+}
+
+.nameIngredient {
+  color: var(--Black, #1B1B1B);
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+
+.quantityUnit-style {
+  color:#7A7A7A;
+  margin-top: 5px;
+}
+
+
+
+
+
+/* .choices__list--dropdown {
+  max-height: 200px; /* Spécifiez la hauteur maximale souhaitée pour la liste déroulante */
+/* overflow-y: auto; /* Active le défilement vertical si nécessaire */
+
+
+
+.labelContainer {
+  width: 90%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.listboxButton {
+ 
+  color: black;
+  
+  width: 191px;
+  border-radius: 6px;
+}
+
+.open {
+  border-radius: 6px 6px 0 0 !important;
+}
+
+
+
+
+
+
+
+
+
+.optionText {
+  height: 45px;
+  display: flex;
+  
+  margin-left: 12px;
+}
+#app-cover
+{
+    
+    width: 300px;
+    height: 42px;
+    margin: 100px auto 0 auto;
+}
+
+.select-button
+{
+  position: relative;
+  height: 24px;
+  width: 150px;
+  margin: auto;
+  padding: 12px 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.options-view-button
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#selected-value
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  /* line-height: 0; */
+  height: 24px;
+  /* margin-top: -15px; */
+  font-family: Manrope;
+}
+.select-list select {
+  display: none; /* Masque les éléments select originaux */
+}
+
+.custom-dropdown {
+  position: absolute;
+  border: 1px solid #ffffff;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 90%;
+  border-radius: 10px;
+  display: none;
+  font-family: 'Manrope';
+  padding-left: 14px;
+  padding-top: 8px;
+  line-height: 2.5;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.select-lists {
+  display: flex;
+
+}
+.select-list {
+  position: relative;
+  margin-right: 5%;
+  width: 200px;
+}
+
+.select-header {
+  cursor: pointer; /* Change le curseur pour indiquer que l'élément est cliquable */
+}
+
+.selectListe {
+  display: flex;
+}
+
+.tag {
+  margin-left: 6.3%;
+  margin-top: 1.5%;
+  display: flex;
+}
+.tagItem {
+  display: flex;
+  padding: 17px 18px;
+  align-items: center;
+  width: 142px;
+  border-radius: 10px;
+  background: #FFD15B;
+  height: 14px;
+  color: #000;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 30px;
+justify-content: space-between;
+cursor: pointer;
+}

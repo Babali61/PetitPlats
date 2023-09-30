@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <title>Les petits plats</title>
-  <script defer src="script.js"></script>
+  <script defer src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         </h2>
         <div class="search-container">
           <form class="form-search" method="get" action="#">
-            <input type="search" name="search" placeholder="Rechercher une recette, un ingrédient, ..." />
+            <input class="input-search" type="search" name="search" placeholder="Rechercher une recette, un ingrédient, ..." />
             <button type="submit">
               <img src="assets/icon/IconeRecherche.svg" alt="Recherche" />
             </button>
@@ -34,72 +34,56 @@
     </div>
   </header>
   <main>
+   
     <div id="recipesContainer">
       <div class="listAndTag">
         <div class="list">
           <div class="listes">
-            <!-- Section des ingrédients -->
-            <div class="listIngredient">
-              <div class="listTriage">
-                <label id="ingredient_label" for="ingredient_button">Trier par</label>
-                <div
-                  id="ingredient_button"
-                  class="listboxButton option"
-                  role="button"
-                  aria-haspopup="listbox"
-                  aria-expanded="false"
-                  tabindex="0"
-                >
-                  <div class="optionText">
-                    <!-- Cette span sera remplie dynamiquement -->
-                    <span id="ingredient_value" class="selected"></span>
+            <div class="listes">
+              <div class="select-lists">
+                  <div class="select-list">
+                      <div class="select-header select-button" >
+                          <div id="selected-value"><p>Ingrédients</p><svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                            <path class="arrow-path" d="M1 1L7.5 7L14 1" stroke="#1B1B1B" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          
+                          <button class="options-view-button"></button>
+                          
+                      </div>
+                      <div class="custom-dropdown" id="ingredients-list"></div>
                   </div>
-                </div>
+                  <div class="select-list">
+                      <div class="select-header select-button" >
+                        <div id="selected-value"><p>Appareils</p><svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                          <path class="arrow-path" d="M1 1L7.5 7L14 1" stroke="#1B1B1B" stroke-linecap="round"/>
+                          </svg>
+                        </div>
+                          <button class="options-view-button"></button>
+                      </div>
+                      <div class="custom-dropdown" id="appliances-list"></div>
+                  </div>
+                  <div class="select-list">
+                      <div class="select-header select-button" >
+                        <div id="selected-value"><p>Ustensiles</p><svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                          <path class="arrow-path" d="M1 1L7.5 7L14 1" stroke="#1B1B1B" stroke-linecap="round"/>
+                          </svg>
+                        </div>
+                          <button class="options-view-button"></button>
+                      </div>
+                      <div class="custom-dropdown" id="ustensils-list"></div>
+                  </div>
               </div>
-            </div>
-            
-            <!-- Section des appareils -->
-            <div class="listAppareil">
-              <label id="appareil_label" for="appareil_button">Trier par</label>
-              <div
-                id="appareil_button"
-                class="listboxButton option"
-                role="button"
-                aria-haspopup="listbox"
-                aria-expanded="false"
-                tabindex="0"
-              >
-                <div class="optionText">
-                  <!-- Cette span sera remplie dynamiquement -->
-                  <span id="appareil_value" class="selected"></span>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Section des ustensiles -->
-            <div class="listUstensile">
-              <label id="ustensile_label" for="ustensile_button">Trier par</label>
-              <div
-                id="ustensile_button"
-                class="listboxButton option"
-                role="button"
-                aria-haspopup="listbox"
-                aria-expanded="false"
-                tabindex="0"
-              >
-                <div class="optionText">
-                  <!-- Cette span sera remplie dynamiquement -->
-                  <span id="ustensile_value" class="selected"></span>
-                </div>
-              </div>
-            </div>
+          </div>
+          
+           
           </div>
           
           <!-- Section du nombre de recettes -->
-          <div class="nombreRecettes" style="background-color: aliceblue; width: 100px; height: 20px;"></div>
+          <div class="nombreRecettes"></div>
         </div>
         
-      <div class="tag"></div>
+        <div class="tag" id="tag"></div>
       <div id="recettesParent">
 
       </div>
