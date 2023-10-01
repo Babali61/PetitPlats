@@ -198,6 +198,9 @@ function filterRecipes(query) {
                 recipe.ustensils.some((ust) =>
                   ust.toLowerCase().includes(lowerCaseQuery)
                 ))
+
+            || (recipe.description &&
+                 recipe.description.toLowerCase().includes(lowerCaseQuery))
             : true;   // Si aucune requête n'est fournie, considère que toutes les recettes correspondent
 
         // Vérifie si la recette contient tous les tags actifs sélectionnés
